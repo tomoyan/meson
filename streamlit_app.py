@@ -53,7 +53,7 @@ def search_address(address):
     data = df.to_dict(orient='records')
 
     for row in data:
-        if row['address'] == address:
+        if row['address'].lower() == address.lower():
             result['data'] = row
             if row['usdc'] >= USDC_MIN and row['is_contract'] is False:
                 result['status'] = True

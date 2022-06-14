@@ -16,5 +16,3 @@ pip install streamlit
 ## RUN STREAMLIT
 * streamlit run your_script.py [-- script args]
 streamlit run streamlit_app.py
-
-
