@@ -9,6 +9,7 @@ def main():
     st.title("Arbitrum Airdrop Check")
 
     address = st.text_input('Enter Arbitrum address', placeholder='0x0f96...')
+    address = address.strip()
     # st.write(address)
 
     if address:
