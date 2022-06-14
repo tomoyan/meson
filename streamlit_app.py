@@ -1,11 +1,20 @@
 import streamlit as st
 import pandas as pd
+from PIL import Image
 
 USDC_MIN = 10
 
 
 def main():
     print('START_MAIN')
+    image = Image.open('favicon.ico')
+
+    # app title and favicon settings
+    st.set_page_config(
+        page_title="Meson - Airdrop Check",
+        page_icon=image,
+    )
+
     st.title("Arbitrum Airdrop Check")
 
     address = st.text_input('Enter Arbitrum address', placeholder='0x0f96...')
