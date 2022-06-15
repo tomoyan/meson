@@ -67,6 +67,7 @@ def search_address(address):
             result['data'] = row
             if row['usdc'] >= USDC_MIN and row['is_contract'] is False:
                 result['status'] = True
+                break
 
     return result
 
